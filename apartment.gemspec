@@ -39,7 +39,7 @@ Gem::Specification.new do |s|
     s.add_development_dependency 'jruby-openssl'
   else
     s.add_development_dependency 'mysql2'
-    s.add_development_dependency 'pg'
+    s.add_development_dependency 'pg', '-> 0.21.0'
     s.add_development_dependency 'sqlite3'
   end
 end
