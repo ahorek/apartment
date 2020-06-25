@@ -23,6 +23,7 @@ module Apartment
       # before init is called
       @already_initialized = true
       init
+    rescue ActiveRecord::NoDatabaseError
     end
 
     def reinitialize
