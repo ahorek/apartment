@@ -24,6 +24,7 @@ module Apartment
       @already_initialized = true
       init
     rescue ActiveRecord::NoDatabaseError
+      @already_initialized = false
     end
 
     def reinitialize
